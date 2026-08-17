@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-red { fill: #E60000; }
+      .text-black { fill: #FFFFFF; } /* White instead of black so it shows on dark background! */
+      .text-red { fill: #E60000; }
+      .font-bold { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; }
+      .font-medium { font-family: 'Arial', sans-serif; font-weight: 700; }
+      .font-small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #A0A0A0; }
+    </style>
+  </defs>
+
+  <!-- Red Shape -->
+  <path class="bg-red" d="M 20 20 Q 20 5 40 5 L 80 5 Q 90 5 95 15 L 105 25 Q 110 30 120 30 L 130 30 Q 140 30 140 45 L 140 90 Q 140 115 115 115 L 45 115 Q 20 115 20 90 Z" />
+  
+  <!-- The B inside the red shape -->
+  <!-- Cutouts to make it look like the stylized B -->
+  <path fill="#0A0A0A" d="M 45 30 L 80 30 Q 100 30 100 45 Q 100 55 90 55 L 45 55 Z" />
+  <path fill="#0A0A0A" d="M 45 65 L 85 65 Q 105 65 105 80 Q 105 95 85 95 L 45 95 Z" />
+
+  <!-- Text -->
+  <text x="155" y="38" class="text-red font-bold" font-size="42">Bold</text>
+  <text x="155" y="75" class="text-black font-bold" font-size="40">Technology</text>
+  <text x="155" y="108" class="text-black font-bold" font-size="34">&amp; Engineering</text>
+  <text x="360" y="118" class="font-small" text-anchor="end">do it bold</text>
+</svg>
