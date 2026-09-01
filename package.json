@@ -1,18 +1,21 @@
 {
-  "name": "vs",
+  "name": "boldtech-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Site vitrine BOLD TECHNOLOGY AND ENGINEERING SARL — Backend Node.js/Express",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bold-technology", "cameroun", "douala"],
+  "author": "BOLD TECHNOLOGY AND ENGINEERING SARL",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "mysql2": "^3.6.5",
     "nodemailer": "^9.0.5"
   }
 }

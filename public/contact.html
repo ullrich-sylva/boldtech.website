@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — BOLD TECHNOLOGY AND ENGINEERING SARL</title>
+  <meta name="description" content="Contactez BOLD TECHNOLOGY pour discuter de votre projet technologique. Nous répondons sous 24h.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.png" alt="BOLD TECHNOLOGY AND ENGINEERING SARL" class="logo-img">
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="/">Accueil</a>
+        <a href="/#apropos">À propos</a>
+        <a href="/#services">Services</a>
+        <a href="/#realisations">Réalisations</a>
+        <a href="/#contact" class="active">Contact</a>
+        <div class="nav-cta">
+          <a href="/#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Devis
+          </a>
+        </div>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       PAGE HEADER
+       ============================================ -->
+  <section class="page-header section">
+    <div class="container">
+      <div class="page-header-content">
+        <h1 class="page-title">Nous Contacter</h1>
+        <p class="page-subtitle">
+          Vous avez une question ou un projet ? Contactez-nous dès maintenant. 
+          Nous vous répondrons sous 24 heures.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <div class="section-tag">
+            <i class="fas fa-envelope"></i>
+            Nos coordonnées
+          </div>
+          <h2>
+            Parlons de votre <span class="highlight">projet</span>
+          </h2>
+          <p>
+            Vous avez un projet technologique ? Besoin d'un devis pour une installation réseau, 
+            de la vidéosurveillance ou de l'énergie solaire ? Contactez-nous dès maintenant.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Adresse</h4>
+                <p>Douala, Cameroun</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Téléphone</h4>
+                <p>+237 678 893 777</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Email</h4>
+                <p>contact@boldtechnology.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Horaires</h4>
+                <p>Lun – Ven : 8h00 – 17h00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper reveal reveal-delay-2">
+          <h3>Demander un devis gratuit</h3>
+          <p>Remplissez le formulaire ci-dessous et nous vous répondrons sous 24h.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" placeholder="Votre nom complet" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="votre@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" placeholder="+237 6XX XXX XXX">
+              </div>
+              <div class="form-group">
+                <label for="subject">Service concerné</label>
+                <select id="subject">
+                  <option value="">Sélectionnez un service</option>
+                  <option value="reseaux">Réseaux Informatiques</option>
+                  <option value="maintenance">Maintenance Informatique & Électronique</option>
+                  <option value="videosurveillance">Vidéosurveillance & Sécurité</option>
+                  <option value="solaire">Énergie Solaire</option>
+                  <option value="cloud">Cloud Computing</option>
+                  <option value="flotte">Gestion de Flotte Automobile</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Description du projet *</label>
+              <textarea id="message" placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i class="fas fa-paper-plane"></i>
+              Envoyer la demande
+            </button>
+          </form>
+
+          <div class="form-success">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message envoyé avec succès !</h3>
+            <p>Nous avons bien reçu votre demande. Notre équipe vous contactera sous 24h.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <img src="assets/images/logo.svg" alt="BOLD TECHNOLOGY AND ENGINEERING SARL" class="logo-img">
+          </a>
+          <p>
+            Votre partenaire technologique de confiance au Cameroun. Réseaux, sécurité, 
+            énergie solaire et solutions cloud pour les entreprises.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about">À propos</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/realisations">Réalisations</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services">Réseaux Informatiques</a></li>
+            <li><a href="/services">Maintenance</a></li>
+            <li><a href="/services">Vidéosurveillance</a></li>
+            <li><a href="/services">Énergie Solaire</a></li>
+            <li><a href="/services">Cloud Computing</a></li>
+            <li><a href="/services">Gestion de Flotte</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Restez informé</h4>
+          <p>Recevez nos actualités et offres spéciales directement dans votre boîte mail.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Votre email">
+            <button type="button" aria-label="S'abonner"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2020 – 2026 <a href="/">BOLD TECHNOLOGY AND ENGINEERING SARL</a>. Tous droits réservés.</p>
+        <p>Fondée par OMAM BISSECK CHAMBERLAIN — Douala, Cameroun</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

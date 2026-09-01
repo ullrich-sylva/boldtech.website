@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de Bord Administrateur — BOLDTECH</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="/assets/images/logo.png" alt="BOLD TECH" class="admin-logo">
+    </div>
+    <nav class="sidebar-menu">
+      <a href="#" class="active"><i class="fas fa-envelope"></i> Messages</a>
+      <a href="../" target="_blank"><i class="fas fa-globe"></i> Voir le site</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="dashboard-header">
+      <h1>Gestion des Messages</h1>
+      <div class="user-profile">
+        <span>Admin BOLDTECH</span>
+        <div class="avatar"><i class="fas fa-user-shield"></i></div>
+      </div>
+    </header>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-icon icon-total"><i class="fas fa-inbox"></i></div>
+        <div class="stat-info">
+          <h3 id="statTotal">0</h3>
+          <p>Messages reçus</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-unread"><i class="fas fa-envelope-open-text"></i></div>
+        <div class="stat-info">
+          <h3 id="statUnread">0</h3>
+          <p>Non lus</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-treated"><i class="fas fa-check-double"></i></div>
+        <div class="stat-info">
+          <h3 id="statTreated">0</h3>
+          <p>Traités</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters and Table -->
+    <div class="content-card">
+      <div class="content-header">
+        <h2>Liste des messages</h2>
+        <div class="filters">
+          <select id="statusFilter">
+            <option value="tous">Tous les statuts</option>
+            <option value="non_lu">Non lus</option>
+            <option value="lu">Lus</option>
+            <option value="traite">Traités</option>
+          </select>
+          <select id="serviceFilter">
+            <option value="tous">Tous les services</option>
+            <option value="reseaux">Réseaux</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="videosurveillance">Vidéosurveillance</option>
+            <option value="solaire">Solaire</option>
+            <option value="cloud">Cloud</option>
+            <option value="flotte">Gestion Flotte</option>
+            <option value="autre">Autre / Général</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Messages Table -->
+      <div class="table-container">
+        <table class="messages-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Nom</th>
+              <th>Email / Tél</th>
+              <th>Sujet / Service</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="messagesTableBody">
+            <!-- Messages dynamic content -->
+            <tr>
+              <td colspan="6" class="table-loading"><i class="fas fa-spinner fa-spin"></i> Chargement des messages...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Message Detail Modal -->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalSubject">Détail du Message</h3>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="info-grid">
+          <div>
+            <strong>Expéditeur :</strong>
+            <span id="modalSender"></span>
+          </div>
+          <div>
+            <strong>Date :</strong>
+            <span id="modalDate"></span>
+          </div>
+          <div>
+            <strong>Email :</strong>
+            <span id="modalEmail"></span>
+          </div>
+          <div>
+            <strong>Téléphone :</strong>
+            <span id="modalPhone"></span>
+          </div>
+          <div>
+            <strong>Service :</strong>
+            <span id="modalService"></span>
+          </div>
+          <div>
+            <strong>Statut actuel :</strong>
+            <span id="modalStatusTag" class="status-tag"></span>
+          </div>
+        </div>
+        <div class="message-text">
+          <strong>Message :</strong>
+          <p id="modalText"></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="markReadBtn" class="btn btn-action"><i class="fas fa-envelope-open"></i> Marquer comme Lu</button>
+        <button id="markTreatedBtn" class="btn btn-action btn-success"><i class="fas fa-check"></i> Marquer comme Traité</button>
+        <button id="deleteMessageBtn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Supprimer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>

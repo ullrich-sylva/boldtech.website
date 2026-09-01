@@ -210,9 +210,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const error = document.createElement('div');
     error.className = 'form-error';
     error.style.cssText = `
-      background: rgba(200, 16, 46, 0.1);
-      border: 1px solid rgba(200, 16, 46, 0.3);
-      color: #E8344D;
+      background: rgba(220, 68, 55, 0.07);
+      border: 1px solid rgba(220, 68, 55, 0.25);
+      color: #BE372B;
       padding: 12px 16px;
       border-radius: 8px;
       margin-bottom: 16px;

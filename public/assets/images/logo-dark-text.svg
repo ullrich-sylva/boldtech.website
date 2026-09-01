@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150">
+  <defs>
+    <style>
+      .b-red { fill: #E51A22; }
+      .txt-ink { fill: #000000; }
+      .font-black { font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif; font-weight: 900; }
+      .font-tagline { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 12px; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+
+  <!-- Icone : B rouge stylise (squircle, bord gauche droit, deux encoches blanches) -->
+  <g transform="translate(4,14) scale(1.28)">
+    <path class="b-red" d="M32 5 L64 5 Q95 5 95 50 Q95 95 64 95 L32 95 Q6 95 6 72 L6 28 Q6 5 32 5 Z"/>
+    <path fill="#FFFFFF" d="M24 32 L66 32 Q72 32 72 38 Q72 44 66 44 L24 44 Z"/>
+    <path fill="#FFFFFF" d="M24 56 L66 56 Q72 56 72 62 Q72 68 66 68 L24 68 Z"/>
+  </g>
+
+  <!-- Nom de l'entreprise -->
+  <text x="146" y="46" class="b-red font-black" font-size="44">Bold</text>
+  <text x="146" y="88" class="txt-ink font-black" font-size="40">Technology</text>
+  <text x="146" y="126" class="txt-ink font-black" font-size="33">& Engineering</text>
+
+  <!-- Slogan -->
+  <text x="430" y="144" class="font-tagline" fill="#000000" text-anchor="end">do it bold!</text>
+</svg>
